@@ -1,6 +1,7 @@
 {
   "name": "nn",
   "dependencies": {
+    "jquery": "latest",
     "bourbon": "~4.2.2",
     "neat": "~1.7.2"
   },

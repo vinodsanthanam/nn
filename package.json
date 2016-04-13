@@ -12,6 +12,7 @@
     "grunt": "^0.4.5",
     "grunt-sass": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-bowercopy": "latest",
     "grunt-cli": "^1.2.0"
   },
   "engines": {

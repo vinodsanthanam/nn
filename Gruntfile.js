@@ -7,15 +7,28 @@ module.exports = function(grunt) {
           'public/styles/main.css': 'scss/main.scss'
         }
       }
-    ,
-    options: {
-      includePaths: [
-        'bower_components/bourbon/app/assets/stylesheets',
-        'bower_components/neat/app/assets/stylesheets'
-      ]
-    }
-   },
-   watch: {
+            ,
+            options: {
+              includePaths: [
+                'bower_components/bourbon/app/assets/stylesheets',
+                'bower_components/neat/app/assets/stylesheets'
+              ]
+            }
+    },
+    bowercopy: {
+      options: {
+        srcPrefix: 'bower_components'
+      },
+      scripts: {
+        options: {
+          destPrefix: 'public/scripts/vendor'
+        },
+        files: {
+          'jquery/jquery.js': 'jquery/dist/jquery.min.js',
+        }
+      }
+    },
+    watch: {
       css: {
         files: 'scss/*.scss',
                       tasks: ['sass']
@@ -25,6 +38,7 @@ module.exports = function(grunt) {
 
                       grunt.loadNpmTasks('grunt-sass');
                       grunt.loadNpmTasks('grunt-contrib-watch');
-  //  grunt.registerTask('default', ['watch']);
-  grunt.registerTask('default', ['sass']);
-  }
+                      grunt.loadNpmTasks('grunt-bowercopy');
+    //  grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['sass', 'bowercopy']);
+    }
