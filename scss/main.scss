@@ -2,6 +2,14 @@
 @import "neat";
 @import "responsive";
 
-#testclass {
-  width: 100%
+#chalupa{
+  width: 100%;
+  margin-top: 100px;
+}
+
+body { 
+  background-image: url('http://www.trafalgar.co.za/wp-content/uploads/2013/11/Causing-a-Disturbance.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
 }
