@@ -1,0 +1,36 @@
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 10;
+$max-width: 1200px;
+
+// Define your breakpoints
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
+body {
+  border: 20px solid;
+}
+body p {
+  text-align: center;
+  line-height: 200px;
+}
+
+.container {
+  @include outer-container;
+  .elem {
+    @include span-columns(3);
+    @include omega(3n);
+    @include media($mobile){
+      @include span-columns(12);
+      width: 80%;
+    }
+    border: 1px solid;
+    border-color: #eee;
+    padding: 1%;
+    margin: 1%;
+    color: #b2a712;
+    font-family: 'Gotham 4r';
+    text-align: justify;
+    background-color: #990f39;
+}   
+}  
