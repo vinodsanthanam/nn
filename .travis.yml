@@ -7,6 +7,7 @@ deploy:
   api_key:
     secure: PXqKsueVLTnM8wkOk5bGYRkAVP8e9h2R1eY9Upa24kvHHY4LBzud2u/TckZD++A5xFyKv1njA0/EKQjPYTjCLCEmW8AZH0ma00zEJS5FzgerXOO+f2ZV4Nq73rjPP78FwI7p4UtPO8SRiOEZOrfDlVR3DoN5Ct4ZRTiFBSwnVZRuKxteN3PXp0+gMkcIulKwEnWXRjFpguyDmsr7PJrg04f89iuf1uI9J5L7VSqB8TH0MoIok1U+ZnoEvrsgdp7BykRA/U8ikdBf+zMKCKhwxlUwCE5El9KHAenVLVJN5x4/mcGeo8j2jxVxaql+THuF16bzDdx8tXx9OEtaJci8dNN/15Gf85hBTr0JnRa0I25qLwZJNHF24jZ86zJaAgZd+V/hiJUA3suPuIdjZ/nU2vHYDF1LjjB5kdeZ5k0mXXseBp+3AwfUrCTubxbXRnmuztg/kKlXb9cIWGPrMvr5XF0M2oECG5ENbrv8rCYga6M98pIWSPCKOO2QlPSU+irdtVvIic3taEoBrGPIU65p4UhLSvaasUCnhF8+MPBbvTObV5aIlXC4GqbgWyo1fisVqTnFB3S1TdDrr+/gi6doXbvw+7gvALdRH4skYdVJ8N+V+2DCpi/6DgNPs4zVvFL1cTLvNL1IPg9Fgp9tqcMn2rCj/Y43LT4DDUGPvY1JvRg=
 before_install:
+  - npm install
   - npm install -g bower
   - bower install
   - node_modules/.bin/grunt
