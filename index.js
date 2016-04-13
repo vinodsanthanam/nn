@@ -1,5 +1,6 @@
 var express = require('express')
 var app = express()
+app.use(express.static(__dirname + '/public'));
 
   var pg = require('pg');
 
@@ -7,8 +8,7 @@ var app = express()
   app.use(express.static(__dirname + '/public'))
 
   app.get('/', function(request, response) {
-    response.send('Hello World!')
-
+    response.sendFile(path.join(__dirname+'/index.html'));
   });
 
 app.get('/db', function (request, response) {
