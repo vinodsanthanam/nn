@@ -12,32 +12,12 @@ var bodyParser = require('body-parser')
     response.sendFile(path.join(__dirname+'/index.html'));
   });
 
-app.get('/db', function (request, response) {
-  pg.connect(process.env.DATABASE_URL, function(err, client, done) {
-    client.query('SELECT * FROM test_table', function(err, result) {
-      if (err) return response.send(500);
-
-      if (result.rows.length == 0) return response.json(result.rows);
-      result.rows.map(function(row){
-        try {
-          row.data = JSON.parse(row.data);
-        } catch (e) {
-          row.data = null;
-        }
-
-        return row;
-      });
-
-      response.json(result.rows);
-    });
-  });
-})
-
 app.post('/alerts/:id',function(req,res){
   var id = req.params.id;
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     var query = "UPDATE alerts SET state= not state WHERE id=($1)";
     client.query(query, [req.params.id], function(err, result) {
+      done();
       console.log(err);
       if (err) return res.send(500);
       if (result.rows.length == 0) return res.json(result.rows);
@@ -62,6 +42,7 @@ app.get('/alerts', function (request, response) {
   console.log(process.env.DATABASE_URL);
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     client.query('SELECT * FROM alerts', function(err, result) {
+      done();
       if (err) return response.send(500);
 
       if (result.rows.length == 0) return response.json(result.rows);
