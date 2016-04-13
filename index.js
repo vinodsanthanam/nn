@@ -14,9 +14,9 @@ var app = express()
 app.get('/db', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     client.query('SELECT * FROM test_table', function(err, result) {
-      if (error) return res.send(500);
+      if (err) return response.send(500);
 
-      if (result.rows.length == 0) return res.json(result.rows);
+      if (result.rows.length == 0) return response.json(result.rows);
       result.rows.map(function(row){
         try {
           row.data = JSON.parse(row.data);
@@ -27,7 +27,7 @@ app.get('/db', function (request, response) {
         return row;
       });
 
-      res.json(result.rows);
+      response.json(result.rows);
     });
   });
 })
