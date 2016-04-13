@@ -14,6 +14,9 @@ $.ajax({
   
   var msg = data[0].state ? "Active" : "Not Active" ;
     $("#chalupa").append("The alert is : " + msg);
+    if (data[0].state) {
+      $("body").css("background-color","red");
+    }
 })
 // Code to run if the request fails; the raw request and
 // status codes are passed to the function
@@ -28,8 +31,10 @@ $.ajax({
 });
     </script>
   </head>
+  <body>
   <p> 
   This is a test page
   </p>
   <div id="chalupa"></div>
+  </body>
 </html>
