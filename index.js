@@ -14,11 +14,20 @@ var app = express()
 app.get('/db', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
     client.query('SELECT * FROM test_table', function(err, result) {
-      done();
-      if (err)
-      { console.error(err); response.send("Error " + err); }
-      else
-      { response.render('pages/db', {results: result.rows} ); }
+      if (error) return res.send(500);
+
+      if (result.rows.length == 0) return res.json(result.rows);
+      result.rows.map(function(row){
+        try {
+          row.data = JSON.parse(row.data);
+        } catch (e) {
+          row.data = null;
+        }
+
+        return row;
+      });
+
+      res.json(result.rows);
     });
   });
 })
