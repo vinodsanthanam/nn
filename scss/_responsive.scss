@@ -18,8 +18,8 @@ body p {
 .container {
   @include outer-container;
   .elem {
-    @include span-columns(3);
-    @include omega(3n);
+    @include span-columns(6);
+    @include omega(2n);
     @include media($mobile){
       @include span-columns(12);
       width: 80%;

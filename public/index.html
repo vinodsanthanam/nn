@@ -13,10 +13,10 @@
           var msg = data[0].state ? "Active" : "Not Active" ;
             $("#chalupa").html("The alert is : " + msg);
             if (data[0].state) {
-              $("body").css("background-color","red");
+              $("#chalupa").css("background-color","red");
             }
             else {
-              $("body").css("background-color","white");
+              $("#chalupa").css("background-color","white");
             }
         })
         .fail(function( xhr, status, errorThrown ) {
@@ -35,6 +35,9 @@
     </script>
   </head>
   <body >
-  <div id="chalupa"></div>
+    <div class="container">
+      <div class="elem" id="chalupa"></div>
+      <div class="elem" id="chalimg"></div>
+    </div>
   </body>
 </html>
