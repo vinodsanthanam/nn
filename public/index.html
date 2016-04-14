@@ -3,21 +3,44 @@
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/vendor/jquery/jquery.js"></script>
     <script language="javascript">
-      (function worker() {
+      var alertTime;
+
+      function setAlertTime() {
+        alertTime = new Date().toLocaleString();
+      }
+      function clearAlertTime() {
+        alertTime = "";
+      }
+      function getAlertTime() {
+        return alertTime;
+      }
+
+      function alertNeighbor() {
+        setAlertTime();
+        $.ajax({
+          url: "/alerts/1",
+          type: "POST"
+        })
+        .done(function(data){worker();})
+      }
+
+      function worker() {
         $.ajax({
           url: "/alerts",
           type: "GET",
-          dataType : "json",
+          dataType : "json"
         })
         .done(function( data ) {
-          var msg = data[0].state ? "Active" : "Not Active" ;
-            $("#chalupa").html("The alert is : " + msg);
+          var msg = data[0].state ? "<p>Waiting for a response since</p>" + getAlertTime() : "<p>There are no active alerts.</p>" ;
+          msg += data[0].state ? "" : "<button onclick=\"alertNeighbor()\"> Inform Neighbor</button>";
+            $("#chalupa").html( msg);
             if (data[0].state) {
               $("#chalupa").css("background-color","red");
               $("#chalimg").fadeTo(50,0.9);
             }
             else {
               $("#chalupa").css("background-color","white");
+              clearAlertTime();
               $("#chalimg").fadeTo(50,0.1);
             }
         })
@@ -33,7 +56,9 @@
         .always(function( xhr, status ) {
         
         })
-      })();
+      }
+      
+      worker();
     </script>
   </head>
   <body >
