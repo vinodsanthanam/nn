@@ -14,9 +14,11 @@
             $("#chalupa").html("The alert is : " + msg);
             if (data[0].state) {
               $("#chalupa").css("background-color","red");
+              $("#chalimg").fadeTo(50,0.9);
             }
             else {
               $("#chalupa").css("background-color","white");
+              $("#chalimg").fadeTo(50,0.1);
             }
         })
         .fail(function( xhr, status, errorThrown ) {
@@ -35,9 +37,11 @@
     </script>
   </head>
   <body >
-    <div class="container">
-      <div class="elem" id="chalupa"></div>
-      <div class="elem" id="chalimg"></div>
+    <div id="main">
+      <section id="firstrow">
+        <div id="chalupa"></div>
+        <div id="chalimg"><p></p></div>
+      </section>
     </div>
   </body>
 </html>

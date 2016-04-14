@@ -1,8 +1,3 @@
-$column: 90px;
-$gutter: 30px;
-$grid-columns: 10;
-$max-width: 1200px;
-
 // Define your breakpoints
 $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 4);
@@ -10,27 +5,36 @@ $mobile: new-breakpoint(max-width 480px 4);
 body {
   border: 20px solid;
 }
-body p {
-  text-align: center;
-  line-height: 200px;
+
+#main {
+ background-color: #333;
 }
 
-.container {
-  @include outer-container;
-  .elem {
-    @include span-columns(6);
-    @include omega(2n);
-    @include media($mobile){
-      @include span-columns(12);
-      width: 80%;
-    }
-    border: 1px solid;
-    border-color: #eee;
-    padding: 1%;
-    margin: 1%;
-    color: #b2a712;
-    font-family: 'Gotham 4r';
-    text-align: justify;
-    background-color: #990f39;
-}   
-}  
+#firstrow {
+ @include span-columns(12);
+}
+
+#chalupa {
+ @include span-columns(6 of 12);
+ padding: 15%;
+ height: 100%;
+ @include media($mobile){
+  @include span-columns(12);
+  height: 10%;
+  width: 100%;
+ }
+}
+
+#chalimg {
+ @include span-columns(6 of 12);
+  background-image: url('http://www.trafalgar.co.za/wp-content/uploads/2013/11/Causing-a-Disturbance.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 100%;
+  @include media($mobile){
+    @include span-columns(12);
+    height: 90%;
+    width: 100%;
+  }
+}
