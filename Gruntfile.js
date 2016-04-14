@@ -19,6 +19,14 @@ module.exports = function(grunt) {
       options: {
         srcPrefix: 'bower_components'
       },
+      folders: {
+        options: {
+          srcPrefix: ''
+        },
+        files: {
+          'public/images' : 'images'
+        }
+      },
       scripts: {
         options: {
           destPrefix: 'public/scripts/vendor'

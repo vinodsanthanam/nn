@@ -27,7 +27,7 @@ body {
 
 #chalimg {
  @include span-columns(6 of 12);
-  background-image: url('http://www.trafalgar.co.za/wp-content/uploads/2013/11/Causing-a-Disturbance.jpg');
+  background-image: url('../images/Causing-a-Disturbance.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; 

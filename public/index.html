@@ -30,8 +30,8 @@
           dataType : "json"
         })
         .done(function( data ) {
-          var msg = data[0].state ? "<p>Waiting for a response since</p>" + getAlertTime() : "<p>There are no active alerts.</p>" ;
-          msg += data[0].state ? "" : "<button onclick=\"alertNeighbor()\"> Inform Neighbor</button>";
+          var msg = data[0].state ? "<p>Waiting for a response since</p>" + getAlertTime() : "<p>Have a nice day!</p>" ;
+          msg += data[0].state ? "" : "<button class=\"quiteb\" onclick=\"alertNeighbor()\"> </button>";
             $("#chalupa").html( msg);
             if (data[0].state) {
               $("#chalupa").css("background-color","red");
