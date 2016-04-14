@@ -25,6 +25,7 @@ module.exports = function(grunt) {
         },
         files: {
           'jquery/jquery.js': 'jquery/dist/jquery.min.js',
+          'js-cookie/js-cookie.js': 'js-cookie/src/js.cookie.js'
         }
       }
     },
