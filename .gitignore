@@ -1,5 +1,7 @@
 node_modules/
 .env
 npm-debug.log
-public
+public/styles/
+public/images/
+public/scripts/
 bower_components/

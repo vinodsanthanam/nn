@@ -4,7 +4,9 @@
     "jquery": "latest",
     "js-cookie": "latest",
     "bourbon": "~4.2.2",
-    "neat": "~1.7.2"
+    "neat": "~1.7.2",
+    "bower-skrollr": "latest",
+    "normalize-css": "latest"
   },
   "main": "scss/main.scss",
   "ignore": [

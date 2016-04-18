@@ -11,7 +11,8 @@ module.exports = function(grunt) {
             options: {
               includePaths: [
                 'bower_components/bourbon/app/assets/stylesheets',
-                'bower_components/neat/app/assets/stylesheets'
+                'bower_components/neat/app/assets/stylesheets',
+                'bower_components/normalize-css'
               ]
             }
     },
@@ -33,7 +34,9 @@ module.exports = function(grunt) {
         },
         files: {
           'jquery/jquery.js': 'jquery/dist/jquery.min.js',
-          'js-cookie/js-cookie.js': 'js-cookie/src/js.cookie.js'
+          'js-cookie/js-cookie.js': 'js-cookie/src/js.cookie.js',
+          'skrollr/skrollr.js': 'bower-skrollr/skrollr.js',
+          'skrollr-decks/skrollr.decks.js': 'skrollr-decks/dist/skrollr.decks.js'
         }
       }
     },
