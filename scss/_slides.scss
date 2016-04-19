@@ -133,19 +133,33 @@
 
 #background {
   background: url('../images/bcg_slide-1.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   width: 35%;
   height: 100%;
   float: left;
 }
 
-#content {
+#introduction {
   font-weight: bold;
   font-family: Arial, sans-serif;
   display: inline-block; 
   margin-top: 200px;
   margin-left: 50px;
-  border: 2px dashed #eee;
-  padding: 1em;
   width: 25%;
+  @extend .content;
+}
+
+.kplogo {
+  float: left;
+  left: 30%;
+  top: 40%;
+  position: absolute;
+}
+
+p {
+  margin: 2px;
+}
+
+h4 {
+  margin: 0px;
 }
