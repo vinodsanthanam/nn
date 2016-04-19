@@ -18,6 +18,8 @@
   left:0;
   width:50%;
   height:34%;
+  border-top: 1px solid #b7babd;
+  padding-bottom: 5px;
 }
 #slide-1 {
   transform: translate(0, 0);
@@ -54,6 +56,78 @@
   background: url('../images/timeinaccount.jpg') no-repeat center center;
   background-size: contain;
 }
+.hbx {
+  background: url('../images/hbx-core.jpg') no-repeat center center;
+  background-size: contain;
+}
+.hbs {
+  background: url('../images/hbs.jpg') no-repeat center center;
+  background-size: contain;
+}
+.vlad {
+  background: url('../images/vlad.jpg') no-repeat center center;
+  background-size: contain;
+}
+.susmita {
+  background: url('../images/susmita.jpg') no-repeat center center;
+  background-size: contain;
+}
+.bill {
+  background: url('../images/bill.jpg') no-repeat center center;
+  background-size: contain;
+}
+.vipul {
+  background: url('../images/vipul.jpg') no-repeat center center;
+  background-size: contain;
+}
+.review {
+  width: 600px;
+  border: 1px solid #b4b2b7;
+  padding: 1em;
+  background: rgba(100,94,116,0.7);
+  color: #fff;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.review-left {
+  @extend .review;
+}
+.review-left img{
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin-right: 5px;
+}
+.review-right {
+  @extend .review;
+}
+.review-right img{
+  float: right;
+  height: 100px;
+  width: 100px;
+  margin-left: 5px;
+}
+.top-left {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.top-right {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.bottom-left {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+.bottom-right {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+}
+
 
 .left-half {
   width: 35%;
@@ -70,6 +144,20 @@
   position: absolute;
   float: left;
   box-shadow: 0 0 1rem rgba(0,0,0,0.8);
+}
+.hbxframe {
+  @extend .collage;
+  top: 20%;
+  left: 15%;
+  width: 20%;
+  height: 60%;
+}
+.hbsframe {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 17%;
+  left: 37%;
 }
 .firstcollage {
   @extend .collage;
@@ -105,6 +193,11 @@
   box-shadow: none;
   padding: 5px;
   color: #b7babf; 
+}
+.hbxcontent {
+  @extend .hbxframe;
+  @extend .content;
+  left: 37%;
 }
 .firstcontent {
   @extend .firstcollage;
@@ -162,4 +255,8 @@ p {
 
 h4 {
   margin: 0px;
+}
+
+.special {
+  color: #7B212D
 }
