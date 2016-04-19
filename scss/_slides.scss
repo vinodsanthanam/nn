@@ -72,6 +72,10 @@
   background: url('../images/susmita.jpg') no-repeat center center;
   background-size: contain;
 }
+.navya {
+  background: url('../images/navya.jpg') no-repeat center center;
+  background-size: contain;
+}
 .bill {
   background: url('../images/bill.jpg') no-repeat center center;
   background-size: contain;
@@ -126,13 +130,23 @@
 }
 .top-left {
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 5%;
 }
 .top-right {
   position: absolute;
-  top: 25%;
+  top: 2%;
   left: 35%;
+}
+.left-middle{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.right-middle{
+  position: absolute;
+  top: 31%;
+  left: 35%
 }
 .bottom-left {
   position: absolute;
@@ -141,7 +155,7 @@
 }
 .bottom-right {
   position: absolute;
-  top: 70%;
+  top: 64%;
   left: 35%;
 }
 
