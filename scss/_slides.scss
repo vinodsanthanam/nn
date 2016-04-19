@@ -88,6 +88,14 @@
   background: url('../images/salary.jpg') no-repeat center center;
   background-size: contain;
 }
+.baybridge {
+  background: url('../images/baybridge.jpg') no-repeat center center;
+  background-size: contain;
+}
+.thanks {
+  background: url('../images/thanks.jpg') no-repeat center center;
+  background-size: contain;
+}
 
 .review {
   width: 600px;
@@ -231,6 +239,18 @@
   height: 30%;
   width: 10%;
   left: 18%;
+}
+
+.baybridge-frame{
+  position: relative;
+  left: -16%;
+  height: 80%
+  padding-top: 5px;
+}
+.thanks-frame{
+  position: relative;
+  left: -16%;
+  height: 20%
 }
 
 #background {
