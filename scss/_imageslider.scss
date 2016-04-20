@@ -1,0 +1,24 @@
+#sliderFrame, #sliderFrame div {
+  box-sizing: content-box;
+  position: absolute;
+  top: 95px;
+  left: 50px;
+}
+#sliderFrame 
+{
+  width:200px;
+  margin:0 auto; /*center-aligned*/
+}
+
+#slider, #slider .sliderInner {
+  width:200px;height:175px;/* Must be the same size as the slider images */
+  border-radius:3px;
+}
+
+#slider {
+  position:relative;
+}
+
+.navBulletsWrapper {
+  display: none;
+}

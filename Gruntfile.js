@@ -25,7 +25,8 @@ module.exports = function(grunt) {
           srcPrefix: ''
         },
         files: {
-          'public/images' : 'images'
+          'public/images' : 'images',
+          'public/scripts' : 'scripts'
         }
       },
       scripts: {

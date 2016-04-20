@@ -7,6 +7,7 @@
     <script src="scripts/vendor/js-cookie/js-cookie.js"></script>
     <script src="scripts/vendor/skrollr/skrollr.js"></script>
     <script src="scripts/vendor/skrollr-decks/skrollr.decks.js"></script>
+    <script src="scripts/slider/js-image-slider.js"></script>
   </head>
   <body >
     <div id="page-content">
@@ -29,184 +30,195 @@
                     <h1><strong>Welcome - 2016 Review</strong></h1>
                     <img src="https://www.thoughtworks.com/imgs/tw-logo.png">
                </div>
-          <div id="background"
-               data-90p-start="opacity: 0.05;"
-               data-30p-start="opacity: 0.60;"
-               data-0p-start="opacity: 1;"
-               ></div>
+    <div id="background"
+         data-90p-start="opacity: 0.05;"
+         data-30p-start="opacity: 0.60;"
+         data-0p-start="opacity: 1;"
+         ></div>
              </div>
-    <div id="slide-2" class="slide">
-      <div class="left-half"></div>
-      <div class="right-half">
-        <div class="firstcollage leverage"
-             data-200p-start=" opacity: 0; top: 50%;"
-             data-100p-start=" opacity: 1; top: 30%;"
-             data-70p-start="opacity: 0.6; top: 10%;"
-             ></div>  
-        <div class="firstcontent"
-             data-200p-start=" opacity: 0; top: 50%;"
-             data-100p-start=" opacity: 1; top: 10%;"
-             data-70p-start="opacity: 0; top: 5%;"
-             >
-             <h4><p>LEVERAGE</p></h4>
-             <p>Well leveraged account with 40% consultant grade devs.</p>
-        </div>
-        <div class="secondcollage gendermix"
-             data-200p-start=" opacity: 0; top: 45%;"
-             data-100p-start=" opacity: 1; top: 10%;"
-             data-70p-start="opacity: 0.6; top: 7%;"
-             ></div>  
-        <div class="secondcontent"
-             data-200p-start=" opacity: 0; top: 50%;"
-             data-100p-start=" opacity: 1; top: 10%;"
-             data-70p-start="opacity: 0; top: 5%;"
-             >
-             <h4><p>GENDER MIX</p></h4>
-             <p>We could have done better with gender diversity!</p>
-             <p>All teams had 25% women in the team.</p>
-        </div>
-        <div class="kplogo"
-             data-200p-start=" opacity: 0; top: 50%;"
-             data-100p-start=" opacity: 1; top: 40%;"
-             data-70p-start="opacity: 0; top: 5%;"
-             >
-             <img src="https://healthy.kaiserpermanente.org/html/kaiser/img/kplogo.png">
-        </div>
-          <div class="thirdcollage timeinaccount"
-               data-200p-start=" opacity: 0; top: 80%;"
-               data-100p-start=" opacity: 1; top: 25%;"
-               data-70p-start="opacity: 0.6; top: 10%;"
-               >
-          </div>  
-            <div class="thirdcontent"
-                 data-120p-start=" opacity: 0; top: 70%;"
-                 data-100p-start=" opacity: 1; top: 70%;"
-                 data-70p-start="opacity: 0.6; top: 70%;"
-                 >
-                 <h4><p>ROLL-OFFS</p></h4>
-                 <p>Frequent rotation of folks due to attrition and planned rolloffs.</p>
-                 <h4><p>REMOTE WORK</p></h4>
-                 <p>Championed flexible work location for the team.</p>
-            </div>
-            <div class="fourthcollage tenure"
-                 data-200p-start=" opacity: 0; top: 70%;"
-                 data-100p-start=" opacity: 1; top: 60%;"
-                 data-70p-start="opacity: 0.6; top: 33%;"
-                 ></div>  
-            <div class="fourthcontent"
-                 data-200p-start=" opacity: 0; top: 70%;"
-                 data-100p-start=" opacity: 1; top: 60%;"
-                 data-70p-start="opacity: 0.6; top: 33%;"
-                 >
-                 <h4><p>TENURE</p></h4>
-                 <p>Well balanced team with equal # tenured TWers and helping onboarding new TWers.</p>
-            </div>
-      </div>
-    </div>
-    <div id="slide-3" class="slide">
-      <div class="hbx hbxframe">
-      </div>
-      <div class="hbxcontent">
-        <h3 class="special"><p>Harvard Business School</p></h3>
-        <p></p>
-        <p>Business Analytics</p>
-        <p></p>
-        <p>Economics for Managers</p>
-        <p></p>
-        <p>Financial Accounting</p>
-        <div class="hbs hbsframe"></div>
-      </div>
-    </div>
-    <div id="slide-4" class="slide">
-      <div class="review-right bottom-right">
-        <img class="vipul">
-        <p>
-        Positives:
-        Despite your busy schedule at Kaiser with so many teams and managing client, you are still able to catch up with everyone. All of us appreciate that a lot.
+             <div id="slide-2" class="slide">
+               <div class="left-half"></div>
+               <div class="right-half">
+                 <div class="firstcollage leverage"
+                      data-200p-start=" opacity: 0; top: 50%;"
+                      data-100p-start=" opacity: 1; top: 30%;"
+                      data-70p-start="opacity: 0.6; top: 10%;"
+                      ></div>  
+                 <div class="firstcontent"
+                      data-200p-start=" opacity: 0; top: 50%;"
+                      data-100p-start=" opacity: 1; top: 10%;"
+                      data-70p-start="opacity: 0; top: 5%;"
+                      >
+                      <h4><p>LEVERAGE</p></h4>
+                      <p>Well leveraged account with 40% consultant grade devs.</p>
+                 </div>
+                 <div class="secondcollage gendermix"
+                      data-200p-start=" opacity: 0; top: 45%;"
+                      data-100p-start=" opacity: 1; top: 10%;"
+                      data-70p-start="opacity: 0.6; top: 7%;"
+                      ></div>  
+                 <div class="secondcontent"
+                      data-200p-start=" opacity: 0; top: 50%;"
+                      data-100p-start=" opacity: 1; top: 10%;"
+                      data-70p-start="opacity: 0; top: 5%;"
+                      >
+                      <h4><p>GENDER MIX</p></h4>
+                      <p>We could have done better with gender diversity!</p>
+                      <p>All teams had 25% women in the team.</p>
+                 </div>
+                 <div class="kplogo"
+                      data-200p-start=" opacity: 0; top: 50%;"
+                      data-100p-start=" opacity: 1; top: 40%;"
+                      data-70p-start="opacity: 0; top: 5%;"
+                      >
+                      <img src="https://healthy.kaiserpermanente.org/html/kaiser/img/kplogo.png">
+                 </div>
+                   <div class="thirdcollage timeinaccount"
+                        data-200p-start=" opacity: 0; top: 80%;"
+                        data-100p-start=" opacity: 1; top: 25%;"
+                        data-70p-start="opacity: 0.6; top: 10%;"
+                        >
+                   </div>  
+                     <div class="thirdcontent"
+                          data-120p-start=" opacity: 0; top: 70%;"
+                          data-100p-start=" opacity: 1; top: 70%;"
+                          data-70p-start="opacity: 0.6; top: 70%;"
+                          >
+                          <h4><p>ROLL-OFFS</p></h4>
+                          <p>Frequent rotation of folks due to attrition and planned rolloffs.</p>
+                          <h4><p>REMOTE WORK</p></h4>
+                          <p>Championed flexible work location for the team.</p>
+                     </div>
+                     <div class="fourthcollage tenure"
+                          data-200p-start=" opacity: 0; top: 70%;"
+                          data-100p-start=" opacity: 1; top: 60%;"
+                          data-70p-start="opacity: 0.6; top: 33%;"
+                          ></div>  
+                     <div class="fourthcontent"
+                          data-200p-start=" opacity: 0; top: 70%;"
+                          data-100p-start=" opacity: 1; top: 60%;"
+                          data-70p-start="opacity: 0.6; top: 33%;"
+                          >
+                          <h4><p>TENURE</p></h4>
+                          <p>Well balanced team with equal # tenured TWers and helping onboarding new TWers.</p>
+                     </div>
+               </div>
+             </div>
+             <div id="slide-3" class="slide">
+               <div class="hbx hbxframe">
+               </div>
+               <div class="hbxcontent">
+                 <h3 class="special"><p>Harvard Business School</p></h3>
+                 <p></p>
+                 <p>Business Analytics</p>
+                 <p></p>
+                 <p>Economics for Managers</p>
+                 <p></p>
+                 <p>Financial Accounting</p>
+                 <div class="hbs hbsframe">
+                 </div>
+                 <div id="sliderFrame">
+                   <div id="slider">
+                     <img src="https://images-na.ssl-images-amazon.com/images/I/51rWSjzGsrL._SY180_.jpg" alt="" />
+                     <img src="https://images-na.ssl-images-amazon.com/images/I/51iCAfSUS6L._SY180_.jpg" alt="" />
+                     <img src="https://images-na.ssl-images-amazon.com/images/I/412PKYiWePL._SY180_.jpg" alt="" />
+                     <img src="https://images-na.ssl-images-amazon.com/images/I/518ZLyDlH4L._SY180_.jpg" alt="" />
+                     <img src="https://images-na.ssl-images-amazon.com/images/I/51mb6DELsQL._SY180_.jpg" alt="" />
+                   </div>
+                 </div>
 
-        I really admire your ability to stay calm and patient through wild conversations at Kaiser. Couple of examples where I noticed this
-        - Trying to explain Feature toggle to AEM team.
-        - Talking to Zumruth about processes
-        </p><p>
+               </div>
+             </div>
+             <div id="slide-4" class="slide">
+               <div class="review-right bottom-right">
+                 <img class="vipul">
+                 <p>
+                 Positives:
+                 Despite your busy schedule at Kaiser with so many teams and managing client, you are still able to catch up with everyone. All of us appreciate that a lot.
 
-        Observation:
-        Lately you appear to be quite drained. Either you need to take more frequent breaks or start delegating some stuff to others.
-        </p>
-      </div>
-      <div class="review-left left-middle">
-        <img class="navya">
-        <p>
-        + very transparent  - In the role of DP, Vinod is very transparent about the engagement and the status of various conversations. Example: Even though the client was not comfortable in disclosing to all the TWers the status of a re-planning exercise, Vinod set up an account meeting and made all the TWers aware of the situation.
-        </p><p>
-        + good relationship with the client - Example: Vinod has developed a close relationship with the client manager and our sponsor at Kaiser and hence is part of some critical discussion and his input is valued.
-        </p><p>
+                 I really admire your ability to stay calm and patient through wild conversations at Kaiser. Couple of examples where I noticed this
+                 - Trying to explain Feature toggle to AEM team.
+                 - Talking to Zumruth about processes
+                 </p><p>
 
-        + good knowledge of business case a requirements - The handover process from Vinod on Message Center has been very straightforward because of his extensive knowledge of the requirements. He was also able to provide a comprehensive list of people at Kaiser to help navigate the many silos that exist here. He is always available to answer questions and help in any way with the team.
-        </p><p>
+                 Observation:
+                 Lately you appear to be quite drained. Either you need to take more frequent breaks or start delegating some stuff to others.
+                 </p>
+               </div>
+               <div class="review-left left-middle">
+                 <img class="navya">
+                 <p>
+                 + very transparent  - In the role of DP, Vinod is very transparent about the engagement and the status of various conversations. Example: Even though the client was not comfortable in disclosing to all the TWers the status of a re-planning exercise, Vinod set up an account meeting and made all the TWers aware of the situation.
+                 </p><p>
+                 + good relationship with the client - Example: Vinod has developed a close relationship with the client manager and our sponsor at Kaiser and hence is part of some critical discussion and his input is valued.
+                 </p><p>
 
-        + technical conversations - Having a technical background has helped Vinod not only be part of technical discussion but also be a valued member of such discussions. He is able to put on a business hat during these conversation as well so that the team is making the right decisions with the business problem in mind.
-        </p><p>
+                 + good knowledge of business case a requirements - The handover process from Vinod on Message Center has been very straightforward because of his extensive knowledge of the requirements. He was also able to provide a comprehensive list of people at Kaiser to help navigate the many silos that exist here. He is always available to answer questions and help in any way with the team.
+                 </p><p>
 
-        + Follow up on things, no dropped balls - Vinod is very good at keeping track of multiple things and clearly articulating the status of various queries from different stakeholders. 
-        </p><p>
+                 + technical conversations - Having a technical background has helped Vinod not only be part of technical discussion but also be a valued member of such discussions. He is able to put on a business hat during these conversation as well so that the team is making the right decisions with the business problem in mind.
+                 </p><p>
 
-        + Timely feedback - Vinod is very quick about giving feedback when he sees something that can be improved so that I am able to incorporate things in a timely way. Example: He gave me some feedback on perception management with the lead PO that I was able to use to my advantage and have since developed a much better relationship with this person.
-        </p><p>
+                 + Follow up on things, no dropped balls - Vinod is very good at keeping track of multiple things and clearly articulating the status of various queries from different stakeholders. 
+                 </p><p>
 
-        - Better way to questioning decisions - I think Vinod has all the best intentions (both TWers and client) when he questions certain decisions that have been made my people, but sometimes his questioning comes across as attacking and puts the person at the receiving end on the defensive. I think the conversation could go better if it was pitched as being more collaborative.
-        </p>
-      </div>
-      <div class="review-right top-left">
-        <img class="susmita">
-        <p>
-        What I like about working with you?
-        </p><p>
-        - I like your approach to problem solving, how you make us think through it and question us. It makes us think in more depth and makes us better problem solvers. You help us solve our own problems
-        - You are very approachable and I feel like I can say whatever's on my mind
-        - You have earned a lot of respect from your peers because of your persistence and your passion to making this account a good place. You are also very diligent about process improvements and always questions why we should do a certain thing
-        </p><p>
-        What you think I can do better or change?
-        </p><p>
-        - A bit more of involving others folks on the account on key issues, just felt sometimes you were the only one trying to fight battles for us 
-        </p><p>
-        Any other comments?
-        </p><p>
-        - Its been an absolute pleasure working with you. We've worked at Gap before but I got to see a lot more of you in action here at Kaiser.  Don't know how long Kaiser will last, but I'd love to work with you in the future
-        </p>
-      </div>
-      <div class="review-right top-right">
-        <img class="bill">
-        <p>
-        First, I want to say that I've enjoyed working with you over the last few months.  You've helped give context on the ThoughtWorks 'way' of doing things, and been a good source of onboarding support.
-        </p><p>
-        What I've liked:
-        - your attention to onboarding everyone and making sure they're brought up to speed
-        - your positive attitude in staying engaged despite being increasingly frustrated at a difficult client.  
-        - the energy you bring to the project, your responsiveness to my requests, and your willingness to pitch in on anything.
-        - you do project management well, driving commitments and schedules with people
-        </p><p>
-        What I think could be better:
-        - we've had some discussions that seem to get twisted into strangely semantic arguments; maybe if you (and I) can keep an eye on the bigger picture
+                 + Timely feedback - Vinod is very quick about giving feedback when he sees something that can be improved so that I am able to incorporate things in a timely way. Example: He gave me some feedback on perception management with the lead PO that I was able to use to my advantage and have since developed a much better relationship with this person.
+                 </p><p>
 
-        Overall, great work.  Thanks again for your help in working with a tough client!
-        </p>
-      </div>
-      <div class="review-left right-middle">
-        <img class="vlad">
-        <p>
+                 - Better way to questioning decisions - I think Vinod has all the best intentions (both TWers and client) when he questions certain decisions that have been made my people, but sometimes his questioning comes across as attacking and puts the person at the receiving end on the defensive. I think the conversation could go better if it was pitched as being more collaborative.
+                 </p>
+               </div>
+               <div class="review-right top-left">
+                 <img class="susmita">
+                 <p>
+                 What I like about working with you?
+                 </p><p>
+                 - I like your approach to problem solving, how you make us think through it and question us. It makes us think in more depth and makes us better problem solvers. You help us solve our own problems
+                 - You are very approachable and I feel like I can say whatever's on my mind
+                 - You have earned a lot of respect from your peers because of your persistence and your passion to making this account a good place. You are also very diligent about process improvements and always questions why we should do a certain thing
+                 </p><p>
+                 What you think I can do better or change?
+                 </p><p>
+                 - A bit more of involving others folks on the account on key issues, just felt sometimes you were the only one trying to fight battles for us 
+                 </p><p>
+                 Any other comments?
+                 </p><p>
+                 - Its been an absolute pleasure working with you. We've worked at Gap before but I got to see a lot more of you in action here at Kaiser.  Don't know how long Kaiser will last, but I'd love to work with you in the future
+                 </p>
+               </div>
+               <div class="review-right top-right">
+                 <img class="bill">
+                 <p>
+                 First, I want to say that I've enjoyed working with you over the last few months.  You've helped give context on the ThoughtWorks 'way' of doing things, and been a good source of onboarding support.
+                 </p><p>
+                 What I've liked:
+                 - your attention to onboarding everyone and making sure they're brought up to speed
+                 - your positive attitude in staying engaged despite being increasingly frustrated at a difficult client.  
+                 - the energy you bring to the project, your responsiveness to my requests, and your willingness to pitch in on anything.
+                 - you do project management well, driving commitments and schedules with people
+                 </p><p>
+                 What I think could be better:
+                 - we've had some discussions that seem to get twisted into strangely semantic arguments; maybe if you (and I) can keep an eye on the bigger picture
 
-        Now that I'm on a project without you, i can much better see how great of a scrumwhatever you were. You did a really good job of keeping the team focused, and the stories flowing, whether that was writing them, wrangling Chris, or keeping unnecessary political things away from us. the snacks flowed as well. i really enjoyed our catchups and how direct we could be with each other about what was going on in the account. i think you did a good job caring for the thoughtworkers on the team, and keeping people at least moderately happy, and motivated. if it was a pep rally, or a certain type of work they wanted to do to keep going, you seemed to do your best to make it happen, catering to individuals' needs when you saw the chance. although it seemed a little harsh, you also did well getting some of our client friends to work more sensibly. You responded to feedback quickly when I brought up the more transparency would be better thing. i would definitely like to work with you again, and i don't think I have any good suggestions for what you can be doing different.
-        </p>
-      </div>
-    </div>
-    <div id="slide-5" class="slide flower">
-      <div class="right-half salary salary-frame" 
-           ></div>
-    </div>
-    <div id="slide-6" class="slide">
-      <div class="baybridge baybridge-frame"></div>
-      <div class="thanks thanks-frame"></div>
-    </div>
+                 Overall, great work.  Thanks again for your help in working with a tough client!
+                 </p>
+               </div>
+               <div class="review-left right-middle">
+                 <img class="vlad">
+                 <p>
+
+                 Now that I'm on a project without you, i can much better see how great of a scrumwhatever you were. You did a really good job of keeping the team focused, and the stories flowing, whether that was writing them, wrangling Chris, or keeping unnecessary political things away from us. the snacks flowed as well. i really enjoyed our catchups and how direct we could be with each other about what was going on in the account. i think you did a good job caring for the thoughtworkers on the team, and keeping people at least moderately happy, and motivated. if it was a pep rally, or a certain type of work they wanted to do to keep going, you seemed to do your best to make it happen, catering to individuals' needs when you saw the chance. although it seemed a little harsh, you also did well getting some of our client friends to work more sensibly. You responded to feedback quickly when I brought up the more transparency would be better thing. i would definitely like to work with you again, and i don't think I have any good suggestions for what you can be doing different.
+                 </p>
+               </div>
+             </div>
+             <div id="slide-5" class="slide flower">
+               <div class="right-half salary salary-frame" 
+                    ></div>
+             </div>
+             <div id="slide-6" class="slide">
+               <div class="baybridge baybridge-frame"></div>
+               <div class="thanks thanks-frame"></div>
+             </div>
         </div>
       </div>
     </div>
