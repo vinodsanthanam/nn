@@ -1,0 +1,2 @@
+sh root@dragino-vin.local
+telnet localhost:6571
